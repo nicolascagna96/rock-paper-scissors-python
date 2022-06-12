@@ -30,7 +30,7 @@ print("Let's play Rock Paper Scissors!")
 
 user_name = input("Enter your name to start the game ")
 
-while True:
+def game():
     possible_actions = ["r", "p", "scissors"]
     user_action = input(f"Hello {user_name}! What do you choose? Type (r, p, s)")
     possible_actions = ["r", "p", "s"]
@@ -52,6 +52,13 @@ while True:
         print(f"You choose {user_action}, computer chose {computer}.You lose! Try again!")
 
     
+while True:
+    game()
+    restart = input("Do you want to play again ? Y/N")
+    if restart == "N":
+        break
+    elif restart == "Y":
+        continue
 
 
 
