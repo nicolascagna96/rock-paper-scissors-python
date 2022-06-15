@@ -27,10 +27,9 @@ scissors = print('''
 ---.__(___)
 ''')
 
-continue_game = True
-print("Let's play Rock Paper Scissors!")
+print("Welcome and Let's play Rock Paper Scissors!")
 
- # Get the user's name and validate it.
+# Get the user's name and validate it.
 while True:
     user_name = input('Please input your name: ').capitalize()
     if user_name.isalpha():
@@ -41,22 +40,26 @@ while True:
 
 # game rules and validation
 while True:
-    game_rules = input("The outcome of the game is determined by 3 simple rules: \n Rock wins against scissors.\n Scissors win against paper.\n Paper wins against rock.\n Do you want to play? Press 'Y' to continue or 'N' to quit the game. ")
+    game_rules = input("\nThere are 3 rules:\n \
+    \nRock wins against scissors.\n\
+    \nScissors win against paper.\n\
+    \nPaper wins against rock.\n\
+    \nDo you want to play? Press 'Y' to continue or 'N' to quit the game. ")
     if game_rules == "Y":
         print()
         break
     elif game_rules == "N":
-        quit()
+        exit()
 
     else:
         print("Invalid entry: enter 'Y'")
 
 # Logic of the game 
-def game_logic():
 
+
+def game_logic():
     """
-    This function is the logic of our game and it establishes who wins, loose or draw
-    betwween the computer and the user.
+    This function is the logic of our game.
     """
 
     possible_actions = ["rock", "paper", "scissors"]
@@ -66,7 +69,8 @@ def game_logic():
     if (user_action not in possible_actions):
         user_action = input("Invalid emtry: Enter rock, paper or scissors ") 
         if (user_action not in possible_actions):
-            print(f"Invalid entry again: Please read again the rules before starting a new game. Bye {user_name}")
+            print(f"Invalid entry again:Please read again the rules before starting a new game.\
+            \nBye {user_name}\n")
             quit()
   
     if user_action == computer:
@@ -94,10 +98,13 @@ def game_logic():
             print(f"You win! {user_action} covers {computer}!")  
 
 # ask player to restart the game
+
+
 def restart():
     '''
     This functions allowed the user to restart or continue the game
     '''
+
     while True:
         user_restart = input("Enter 'q' to quit, 'n' for a new game ")
         if user_restart.lower() == "n":
@@ -108,7 +115,10 @@ def restart():
         elif user_restart != "n" or "q":
             print("Invalid choice. Enter 'n' for a new game or 'q' to quit the game ")
 
-# I used a while loop to repeat the code multiple time and the user can also restart or quit the game
+# Allow user to restart or quit the game
+
+
 while True:
+
     game_logic()
     restart()
