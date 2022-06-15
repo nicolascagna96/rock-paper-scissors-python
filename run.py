@@ -64,37 +64,30 @@ def game_logic():
 
     possible_actions = ["rock", "paper", "scissors"]
     user_action = input(f"Hello {user_name}! Enter rock, paper or scissors ")
-    computer = random.choice(possible_actions)    
-    if (user_action not in possible_actions):
-        user_action = input("Invalid emtry: Enter rock, paper or scissors ") 
-        if (user_action not in possible_actions):
+    computer = random.choice(possible_actions)
+    if user_action not in possible_actions:
+        user_action = input("Invalid emtry: Enter rock, paper or scissors ")
+        if user_action not in possible_actions:
             print(f"Invalid entry again:Please read again the rules before starting a new game.\
             \nBye {user_name}\n")
             quit()
-  
     if user_action == computer:
-        print(f"You choose {user_action}, computer chose {computer}. It's a draw!")
-        
+        print(f"You choose {user_action}, computer chose {computer}.Tie!")
     elif user_action == "rock":
         if computer == "paper":
             print(f"You lose! {computer} covers {user_action}!")
-           
         if computer == "scissors":
             print(f'You win! {user_action} smashes {computer}!')
-           
     elif user_action == "scissors":
         if computer == "paper":
             print(f"You win! {user_action} cuts {computer}!")
-            
         if computer == "rock":
             print(f"You lose! {computer} smashes {user_action}!")
-            
     elif user_action == "paper":
         if computer == "scissors":
             print(f"You lose! {computer} cuts {user_action}!")
-            
         if computer == "rock":
-            print(f"You win! {user_action} covers {computer}!")  
+            print(f"You win! {user_action} covers {computer}!")
 
 # ask player to restart the game.
 
@@ -112,7 +105,7 @@ def restart():
             print(f"The game ended! Bye {user_name}")
             quit()
         elif user_restart != "n" or "q":
-            print("Invalid choice. Enter 'n' for a new game or 'q' to quit the game. ")
+            print("Invalid choice. Enter 'n' for a new game or 'q' to quit. ")
 
 # Allow user to restart or quit the game.
 
