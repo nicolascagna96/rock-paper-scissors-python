@@ -41,10 +41,13 @@ while True:
 
 # game rules and validation
 while True:
-    game_rules = input("The outcome of the game is determined by 3 simple rules: \n Rock ('r') wins against scissors ('s').\n Scissors ('s') win against paper ('p').\n Paper ('p') wins against rock ('r').\n Do you want to play? Press 'Y' to continue ")
+    game_rules = input("The outcome of the game is determined by 3 simple rules: \n Rock wins against scissors.\n Scissors win against paper.\n Paper wins against rock.\n Do you want to play? Press 'Y' to continue or 'N' to quit the game. ")
     if game_rules == "Y":
         print()
         break
+    elif game_rules == "N":
+        quit()
+
     else:
         print("Invalid entry: enter 'Y'")
 
@@ -59,6 +62,12 @@ def game_logic():
     possible_actions = ["rock", "paper", "scissors"]
     user_action = input(f"Hello {user_name}! Enter rock, paper or scissors ")
     computer = random.choice(possible_actions)
+     
+    if (user_action not in possible_actions):
+        user_action = input("Invalid emtry: Enter rock, paper or scissors ") 
+        if (user_action not in possible_actions):
+            print(f"Invalid entry again: Please read again the rules before starting a new game. Bye {user_name}")
+            quit()
   
     if user_action == computer:
         print(f"You choose {user_action}, computer chose {computer}. It's a draw!")
@@ -90,12 +99,14 @@ def restart():
     This functions allowed the user to restart or continue the game
     '''
     while True:
-        user_restart = input("Enter 'q' to quit, 'n' for a new game and any key to continue")
+        user_restart = input("Enter 'q' to quit, 'n' for a new game ")
         if user_restart.lower() == "n":
             game_logic()
         elif user_restart.lower() == "q":
             print(f"The game ended! Bye {user_name}")
             quit()
+        elif user_restart != "n" or "q":
+            print("Invalid choice. Enter 'n' for a new game or 'q' to quit the game ")
 
 # I used a while loop to repeat the code multiple time and the user can also restart or quit the game
 while True:
