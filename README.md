@@ -1,31 +1,53 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock paper scissors
 
-Welcome nicolascagna96,
+# Table of Content
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+1. [Introduction](#introduction)
+2. [UX](#ux)
+3. [Logic](#logic) 
+4. [Features](#features)
+5. [Technologies Used](#technologies-used)
+6. [Testing](#testing)
+7. [ Deployment](#deployment)
+8. [Credits](#credits)
+   
 
-## Reminders
+## Introduction
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+In this project I replicated the famous rock, paper and scissors game.  It is a game originated from China, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock", "paper", and "scissors".
 
-## Creating the Heroku app
+## UX
+### User Stories
+- The user will be asked to provide his/her name.
+- The user will be informed about the rules of the game.
+-  The user will have to follow the rules and win the game.
+### User Goals
+The outcome of the game is determined by 3 simple rules: 
+- Rock wins against scissors.
+- Scissors win against paper.
+- Paper wins against rock.
+The user needs to win the game against the computer.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Logic
+I created a flowchart of the game.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+![picture alt](/images/project-flowchart.PNG "Flowchart")
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## Features
+At the beginning of the game users are greeted and for his name.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Technologies Used
+### Language Used
+- [HTML5](https://en.wikipedia.org/wiki/HTML5 "HTML5")
+- [CSS](https://en.wikipedia.org/wiki/CSS"CSS3")
+- [Python](https://en.wikipedia.org/wiki/Python"Python")
+### Python Modules
+- [Random](https://docs.python.org/3/library/random.html"Random")
+### Libraries, Framework & Tools
+- [Heroku](https://dashboard.heroku.com/apps"Heroku")
+- [PEP8](https://pep8.org/"PEP8")
+- [Github](https://github.com"Github")
+- [Diagram.net](https://app.diagrams.net/"Diagram")
+- [Gitpod](https://www.gitpod.io/"Gitpod") 
 
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+  
