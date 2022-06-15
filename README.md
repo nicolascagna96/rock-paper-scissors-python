@@ -37,9 +37,7 @@ I created a flowchart of the game.
 At the beginning of the game users are greeted and for his name.
 
 ## Technologies Used
-### Language Used
-- [HTML5](https://en.wikipedia.org/wiki/HTML5 "HTML5")
-- [CSS](https://en.wikipedia.org/wiki/CSS"CSS3")
+### Main Language Used
 - [Python](https://en.wikipedia.org/wiki/Python"Python")
 ### Python Modules
 - [Random](https://docs.python.org/3/library/random.html"Random")

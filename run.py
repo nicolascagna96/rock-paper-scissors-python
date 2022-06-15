@@ -38,7 +38,7 @@ while True:
     else:
         print("Invalid entry: players name must be an alphabet")
 
-# game rules and validation
+# game rules and validation.
 while True:
     game_rules = input("\nThere are 3 rules:\n \
     \nRock wins against scissors.\n\
@@ -53,8 +53,7 @@ while True:
 
     else:
         print("Invalid entry: enter 'Y'")
-
-# Logic of the game 
+# Logic of the game.
 
 
 def game_logic():
@@ -64,8 +63,7 @@ def game_logic():
 
     possible_actions = ["rock", "paper", "scissors"]
     user_action = input(f"Hello {user_name}! Enter rock, paper or scissors ")
-    computer = random.choice(possible_actions)
-     
+    computer = random.choice(possible_actions)    
     if (user_action not in possible_actions):
         user_action = input("Invalid emtry: Enter rock, paper or scissors ") 
         if (user_action not in possible_actions):
@@ -97,7 +95,7 @@ def game_logic():
         if computer == "rock":
             print(f"You win! {user_action} covers {computer}!")  
 
-# ask player to restart the game
+# ask player to restart the game.
 
 
 def restart():
@@ -113,9 +111,9 @@ def restart():
             print(f"The game ended! Bye {user_name}")
             quit()
         elif user_restart != "n" or "q":
-            print("Invalid choice. Enter 'n' for a new game or 'q' to quit the game ")
+            print("Invalid choice. Enter 'n' for a new game or 'q' to quit the game. ")
 
-# Allow user to restart or quit the game
+# Allow user to restart or quit the game.
 
 
 while True:
