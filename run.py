@@ -49,6 +49,7 @@ while True:
         print()
         break
     elif game_rules == "N":
+        print(f"The game ended! Bye {user_name}")
         exit()
 
     else:
