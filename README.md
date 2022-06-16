@@ -67,7 +67,8 @@ I created a flowchart of the game.
 - [Gitpod](https://www.gitpod.io/"Gitpod") 
 
 ## Testing
-I validate the code through the PEP8 Linter.
+- I validate the code through the PEP8 Linter.
+- Tried to give invalid inputs to test my validation of the input.
 ### PEP8 Online
 [PEP8](https://pep8.org/"PEP8") was used yto validate the Python code to ensure that there is no error.
 
@@ -76,6 +77,9 @@ I validate the code through the PEP8 Linter.
 ### Further Testing
 - I tested the all the screens works in different browsers: Chrome, Safari, Firefox and Edge.
 - I confirmed that this project is responsive, looks good and works on all standard screens using the devtools device toolbar.
+
+### Bugs 
+No remaining bugs.
 
 ## Deployment
 The program was deployed to Heroku. These are the steps:
