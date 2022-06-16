@@ -1,6 +1,6 @@
 # Rock paper scissors
 
-![picture alt](/images/rock-paper-scissors-main-page.PNG "rock-paper-scissors")
+![picture alt](/images/responsive.PNG "rock-paper-scissors")
 
 ## Table of Content
 
@@ -24,7 +24,7 @@ A deployed link of the project can be found: [here](https://rock-paper-scissors-
 ### User Stories
 - The user will be asked to provide his/her name.
 - The user will be informed about the rules of the game.
--  The user will have to follow the rules and win the game.
+- The user will have to follow the rules and win the game.
 ### User Goals
 The outcome of the game is determined by 3 simple rules: 
 - Rock wins against scissors.
@@ -39,9 +39,20 @@ I created a flowchart of the game.
 
 ## Features
 ### Existing features:
-The landing page consist 
+- Landing Page.
+- Game Screen.
+- End game alert.
 #### Landing Page
-![picture alt](/images/landing-page.PNG "rock-paper-scissors")
+![picture alt](/images/Landing-page.PNG "rock-paper-scissors")
+
+#### Game Screen
+![picture alt](/images/game-screen.PNG "rock-paper-scissors")
+
+#### End game screen
+![picture alt](/images/end-game-screen.PNG "rock-paper-scissors")
+
+### Features Left to Implement
+- I plan to add 3 rounds for the game and the user and computer scores.
 
 ## Technologies Used
 ### Main Language Used
@@ -61,6 +72,10 @@ I validate the code through the PEP8 Linter.
 [PEP8](https://pep8.org/"PEP8") was used yto validate the Python code to ensure that there is no error.
 
 ![picture alt](/images/Pep8-Testing.PNG "PEP8 Testing")
+
+### Further Testing
+- I tested the all the screens works in different browsers: Chrome, Safari, Firefox and Edge.
+- I confirmed that this project is responsive, looks good and works on all standard screens using the devtools device toolbar.
 
 ## Deployment
 The program was deployed to Heroku. These are the steps:
@@ -85,4 +100,4 @@ The program was deployed to Heroku. These are the steps:
 - [Devdojo](https://devdojo.com/"Devdojo.com") I found inspiration for my project
  
 ### Acknowledgements
-- I want to thanks all the Code Institute tutors for the great support, and Martina Terlevic for reviewing my project and for giving me a lot of useful feedback.
+- I want to thank all the Code Institute's tutors for the great support, and Martina Terlevic for reviewing my project and for giving me a lot of useful feedback.
