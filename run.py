@@ -1,43 +1,37 @@
-
+""" import random module """
 import random
 
-rock = print('''
+rock = '''
     _______
 ---'   ____)
       (_____)
       (_____)
       (____)
 ---.__(___)
-''')
+'''
 
-paper = print('''
+paper = '''
     _______
 ---'   ____)____
           ______)
           _______)
          _______)
 ---.__________)
-''')
+'''
 
-scissors = print('''
+scissors = '''
     _______
----'   ____)____1
+---'   ____)____
           ______)
        __________)
       (____)
 ---.__(___)
-''')
+'''
 
+# Adding game images in a list
+game_images = [rock, paper, scissors]
+# Print the welcome message
 print("Welcome and Let's play Rock Paper Scissors!")
-
-# Get the user's name and validate it.
-while True:
-    user_name = input('Please input your name: ').capitalize()
-    if user_name.isalpha():
-        print()
-        break
-    else:
-        print("Invalid entry: players name must be an alphabet")
 
 # game rules and validation.
 while True:
@@ -50,45 +44,59 @@ while True:
         print()
         break
     elif game_rules == "N":
-        print(f"The game ended! Bye {user_name}")
+        print("The game ended!")
         exit()
 
     else:
         print("Invalid entry: enter 'Y'")
-# Logic of the game.
+
+# Get the user's name and validate it.
+while True:
+    user_name = input('Please input your name: ').capitalize()
+    if user_name.isalpha():
+        print()
+        break
+    else:
+        print("Invalid entry: players name must be an alphabet")
+
+# Logic of the game. Credit: devdojo.com
 
 
 def game_logic():
     """
     This function is the logic of our game.
     """
+    user_action = check_input()
+    print("User choice: ")
 
-    possible_actions = ["rock", "paper", "scissors"]
-    user_action = input(f"Hello {user_name}! Enter rock, paper or scissors ")
-    computer = random.choice(possible_actions)
-    if user_action not in possible_actions:
-        user_action = input("Invalid emtry: Enter rock, paper or scissors ")
-        if user_action not in possible_actions:
-            print(f"Invalid entry again:Please read again the rules before starting a new game.\
-            \nBye {user_name}\n")
-            quit()
-    if user_action == computer:
-        print(f"You choose {user_action}, computer chose {computer}.Tie!")
-    elif user_action == "rock":
-        if computer == "paper":
-            print(f"You lose! {computer} covers {user_action}!")
-        if computer == "scissors":
-            print(f'You win! {user_action} smashes {computer}!')
-    elif user_action == "scissors":
-        if computer == "paper":
-            print(f"You win! {user_action} cuts {computer}!")
-        if computer == "rock":
-            print(f"You lose! {computer} smashes {user_action}!")
-    elif user_action == "paper":
-        if computer == "scissors":
-            print(f"You lose! {computer} cuts {user_action}!")
-        if computer == "rock":
-            print(f"You win! {user_action} covers {computer}!")
+    print(game_images[user_action])
+    computer = random.randint(0, 2)
+    print("Computer Choice: ")
+    print(game_images[computer])
+    if user_action == 0 and computer == 2:
+        print("You win! 🎉")
+    elif computer == 0 and user_action == 2:
+        print("You lose.  ☠")
+    elif computer > user_action:
+        print("You lose. ☠")
+    elif user_action > computer:
+        print("You win!🎉")
+    elif computer == user_action:
+        print("It's a draw.")
+
+# This function check the validity of the input
+
+
+def check_input():
+
+    """
+    This function check the validity of the inputs
+    """
+    valid_inputs = [0, 1, 2]
+    user_input = -1
+    while user_input not in valid_inputs:
+        user_input = int(input('Enter: 0 Rock, 1 Paper, 2 Scissors '))
+    return user_input
 
 # ask player to restart the game.
 

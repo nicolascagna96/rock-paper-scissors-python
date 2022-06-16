@@ -1,6 +1,8 @@
 # Rock paper scissors
 
-# Table of Content
+![picture alt](/images/rock-paper-scissors-main-page.PNG "rock-paper-scissors")
+
+## Table of Content
 
 1. [Introduction](#introduction)
 2. [UX](#ux)
@@ -16,7 +18,7 @@
 
 In this project I replicated the famous rock, paper and scissors game.  It is a game originated from China, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock", "paper", and "scissors".
 
-A deployed link can be found: [here](https://rock-paper-scissors-p3.herokuapp.com/"Python")
+A deployed link of the project can be found: [here](https://rock-paper-scissors-p3.herokuapp.com/ "Python")
 
 ## UX
 ### User Stories
@@ -36,7 +38,10 @@ I created a flowchart of the game.
 ![picture alt](/images/project-flowchart.PNG "Flowchart")
 
 ## Features
-At the beginning of the game users are greeted and for his name.
+### Existing features:
+The landing page consist 
+#### Landing Page
+![picture alt](/images/landing-page.PNG "rock-paper-scissors")
 
 ## Technologies Used
 ### Main Language Used
@@ -73,4 +78,11 @@ The program was deployed to Heroku. These are the steps:
 - git commit -m "Deploy to heroku CLI"
 - git push origin main
 - git push heroku main
-## Credit  
+
+## Credit
+- [W3schools](https://www.w3schools.com/s"W3schools") Great source of information and inspiration
+- [Udemy](https://www.udemy.com/course/100-days-of-code) 100 Days of Code: The Complete Python Pro Bootcamp for  2022
+- [Devdojo](https://devdojo.com/"Devdojo.com") I found inspiration for my project
+ 
+### Acknowledgements
+- I want to thanks all the Code Institute tutors for the great support, and Martina Terlevic for reviewing my project and for giving me a lot of useful feedback.
