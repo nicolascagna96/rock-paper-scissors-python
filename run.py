@@ -40,12 +40,12 @@ while True:
     \nScissors win against paper.\n\
     \nPaper wins against rock.\n\
     \nDo you want to play? Press 'Y' to continue or 'N' to quit the game. ")
-    if game_rules == "Y":
+    if game_rules.upper() == "Y":
         print()
         break
-    elif game_rules == "N":
+    elif game_rules.upper() == "N":
         print("The game ended!")
-        exit()
+        quit()
 
     else:
         print("Invalid entry: enter 'Y'")
@@ -68,7 +68,6 @@ def game_logic():
     """
     user_action = check_input()
     print("User choice: ")
-
     print(game_images[user_action])
     computer = random.randint(0, 2)
     print("Computer Choice: ")
@@ -90,13 +89,14 @@ def game_logic():
 def check_input():
 
     """
-    This function check the validity of the inputs
+    This function check the validity of the inputsY
     """
     valid_inputs = [0, 1, 2]
     user_input = -1
     while user_input not in valid_inputs:
-        user_input = int(input('Enter: 0 Rock, 1 Paper, 2 Scissors '))
+        user_input = int(input('Enter: 0 Rock, 1 Paper or 2 Scissors '))
     return user_input
+
 
 # ask player to restart the game.
 
