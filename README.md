@@ -16,6 +16,8 @@
 
 In this project I replicated the famous rock, paper and scissors game.  It is a game originated from China, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock", "paper", and "scissors".
 
+A deployed link can be found: [here](https://rock-paper-scissors-p3.herokuapp.com/"Python")
+
 ## UX
 ### User Stories
 - The user will be asked to provide his/her name.
@@ -48,4 +50,27 @@ At the beginning of the game users are greeted and for his name.
 - [Diagram.net](https://app.diagrams.net/"Diagram")
 - [Gitpod](https://www.gitpod.io/"Gitpod") 
 
-  
+## Testing
+I validate the code through the PEP8 Linter.
+### PEP8 Online
+[PEP8](https://pep8.org/"PEP8") was used yto validate the Python code to ensure that there is no error.
+
+![picture alt](/images/Pep8-Testing.PNG "PEP8 Testing")
+
+## Deployment
+The program was deployed to Heroku. These are the steps:
+- Log in to Heroku.
+- Click on "create a new app".
+- Click on settings.
+- Added these build packs: Python and nodejs.
+- go to the Gitpod terminal:
+- type heroku login -i
+- enter your email
+- enter your password
+- type heroku apps
+- heroku git:remote -a rock-paper-scissors-p3
+- git add .
+- git commit -m "Deploy to heroku CLI"
+- git push origin main
+- git push heroku main
+## Credit  
