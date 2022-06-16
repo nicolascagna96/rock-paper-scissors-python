@@ -78,8 +78,8 @@ I created a flowchart of the game.
 - I tested the all the screens works in different browsers: Chrome, Safari, Firefox and Edge.
 - I confirmed that this project is responsive, looks good and works on all standard screens using the devtools device toolbar.
 
-### Bugs 
-No remaining bugs.
+### Unfixed Bugs 
+- When adding a string in the user_action input we get an error. I'm planning to fix it as soon as possible.
 
 ## Deployment
 The program was deployed to Heroku. These are the steps:

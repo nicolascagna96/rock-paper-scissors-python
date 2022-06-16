@@ -52,7 +52,7 @@ while True:
 
 # Get the user's name and validate it.
 while True:
-    user_name = input('Please input your name: ').capitalize()
+    user_name = input('What is your name? ').capitalize()
     if user_name.isalpha():
         print()
         break
@@ -67,6 +67,7 @@ def game_logic():
     This function is the logic of our game.
     """
     user_action = check_input()
+
     print("User choice: ")
     print(game_images[user_action])
     computer = random.randint(0, 2)
@@ -96,7 +97,6 @@ def check_input():
     while user_input not in valid_inputs:
         user_input = int(input('Enter: 0 Rock, 1 Paper or 2 Scissors '))
     return user_input
-
 
 # ask player to restart the game.
 
